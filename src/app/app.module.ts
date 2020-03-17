@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { QuestionsComponentComponent } from './questions-component/questions-component.component';
 import { QuestionComponentComponent } from './question-component/question-component.component';
+import { HomepageModule } from './homepage/homepage.module';
+import { CoreModule} from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,11 @@ import { QuestionComponentComponent } from './question-component/question-compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomepageModule,
+    CoreModule
   ],
   providers: [],
-  bootstrap: [AppComponent] // First component to load
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
